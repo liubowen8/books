@@ -53,8 +53,8 @@ lsblk
 echo "这里的type字段会看到lvm，这个东西和disk、part有区别，lvm表示 Linux Volume Manager 卷管理器，使用Lvm会生成dm-n逻辑卷，dm的意思是device mapper，完成从逻辑设备到物理设备的映射"
 echo "---------各个磁盘是SSD还是HDD--------------"
 echo "0 → 不旋转 → SSD固态硬盘；   1 → 旋转 → HDD机械硬盘"
-echo "---------各个接口协议类型--------------"
 lsblk -d -o name,rota
+echo "---------各个接口协议类型--------------"
 echo "查看硬盘的接口信息： SAS 、 SATA、 Nvme"
 cat /proc/scsi/scsi
 echo "***********************************************************************************************************"
